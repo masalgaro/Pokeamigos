@@ -1,0 +1,24 @@
+{
+  "name": "pokeamigos",
+  "version": "1.0.0",
+  "description": "Proyecto para la clase de Tópicos de Ingeniería de Software en express nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masalgaro/Pokeamigos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/masalgaro/Pokeamigos/issues"
+  },
+  "homepage": "https://github.com/masalgaro/Pokeamigos#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  [
+    {
+      "id": 0,
+      "nombre": "MissingNo.",
+      "altura": "???",
+      "habilidad": "▓▇▔Co╆rro╈mper╈╩▔",
+      "imagen": "",
+      "frase-filosofica": "En la costa..."
+    },
+    {
+      "id": 1,
+      "nombre": "Bronzong",
+      "altura": "130cm",
+      "habilidad": "Levitación",
+      "imagen": "",
+      "frase-filosofica": "El retumbar de la campana del destino."
+    },
+    {
+      "id": 2,
+      "nombre": "Unown",
+      "altura": "50cm",
+      "habilidad": "Levitación",
+      "imagen": "",
+      "frase-filosofica": "ḀṗṻṞḁṱḛ"
+    },
+    {
+      "id": 3,
+      "nombre": "Hypno",
+      "altura": "160cm",
+      "habilidad": "Insomnio",
+      "imagen": "",
+      "frase-filosofica": "Dormir es la mejor actividad, ¿no?"
+    },
+    {
+      "id": 4,
+      "nombre": "Drifloon",
+      "altura": "40cm",
+      "habilidad": "Detonación",
+      "imagen": "",
+      "frase-filosofica": "Todos flotamos aquí."
+    },
+    {
+      "id": 5,
+      "nombre": "Celebi",
+      "altura": "60cm",
+      "habilidad": "Cura natural",
+      "imagen": "",
+      "frase-filosofica": "Sana y crece."
+    },
+    {
+      "id": 6,
+      "nombre": "Jigglypuff",
+      "altura": "50cm",
+      "habilidad": "Tenacidad",
+      "imagen": "",
+      "frase-filosofica": "Da cada paso en tu propio compás."
+    }
+  ]
+}
