@@ -5,7 +5,7 @@ Muestra información minimalista de "Pokeamigos" (completamente libres de infrac
 
 ## Instalación y Uso
 
-Se pretende crear una imagen propia de Docker para la aplicación, y desplegarla en GCP. Pero hasta ese momento, la Instalación se hace de forma local, con dos simples pasos.
+Se pretende crear una imagen propia de Docker para la aplicación, y desplegarla en GCP. Pero hasta ese momento, la instalación se hace de forma local, con dos simples pasos.
 
 ```bash
 # Clonación
