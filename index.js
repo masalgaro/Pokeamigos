@@ -1,23 +1,29 @@
 const express = require('express')
 const fs = require('fs')
+const path = require('path')
 const app = express()
-const os = require("os")
-const port = 80
+const os = require('os')
+const port = 3000
 
-// Lectura del JSON 
-fs.readFile('pokeamigos-db.json', 'utf-8', (err, data) => {
-  if (err) throw err;
+let db;
 
-  const pokeamigos_db = JSON.parse(data);
+app.get('/api/v1/pokeamigo', (req, res) => {
+  try {
+    db = JSON.parse(fs.readFileSync(path.join(__dirname, 'pokeamigos-db.json'), 'utf-8'));
+  } catch (err) {
+    console.error('Error leyendo base de datos:', err); 
+  }
 
-  console.log(pokeamigos_db);
-});
+  const lista_amigos = db["reg-pokeamigos"];
+  const num_amigo = Math.floor(Math.random() * lista_amigos.length);
 
-// Middleware para conseguir un amigo aleatorio
-app.use((req, res, next) => {
-  const num_amigo = Math.floor(Math.random() * Object.keys(pokeamigos_db.shareInfo[i]).length);
-  next();
-});
+  res.json({
+    ...lista_amigos[num_amigo],
+    contenedor: os.hostname()
+  });
+})
 
-app.get('/', (req, res) => {
-});
+app.listen(port, () => {
+  console.log(`Ejecutándose en el puerto: ${port}`);
+})
+
