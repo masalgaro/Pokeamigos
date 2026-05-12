@@ -5,7 +5,7 @@
       "nombre": "MissingNo.",
       "altura": "???",
       "habilidad": "▓▇▔Co╆rru╈pción╈╩▔",
-      "imagen": "",
+      "imagen": "https://storage.googleapis.com/pokeamigos-imagenes/MissingNo.gif",
       "frase-filosofica": "En la costa..."
     },
     {
@@ -13,7 +13,7 @@
       "nombre": "Bronzong",
       "altura": "130cm",
       "habilidad": "Levitación",
-      "imagen": "",
+      "imagen": "https://storage.googleapis.com/pokeamigos-imagenes/Bronzong.png",
       "frase-filosofica": "El retumbar de la campana del destino."
     },
     {
@@ -21,7 +21,7 @@
       "nombre": "Unown",
       "altura": "50cm",
       "habilidad": "Levitación",
-      "imagen": "",
+      "imagen": "https://storage.googleapis.com/pokeamigos-imagenes/Unown.png",
       "frase-filosofica": "ḀṗṻṞḁṱḛ"
     },
     {
@@ -29,7 +29,7 @@
       "nombre": "Hypno",
       "altura": "160cm",
       "habilidad": "Insomnio",
-      "imagen": "",
+      "imagen": "https://storage.googleapis.com/pokeamigos-imagenes/Hypno.jpg",
       "frase-filosofica": "Dormir es la mejor actividad, ¿no?"
     },
     {
@@ -37,7 +37,7 @@
       "nombre": "Drifloon",
       "altura": "40cm",
       "habilidad": "Detonación",
-      "imagen": "",
+      "imagen": "https://storage.googleapis.com/pokeamigos-imagenes/Drifloon.jpg",
       "frase-filosofica": "Todos flotamos aquí."
     },
     {
@@ -45,7 +45,7 @@
       "nombre": "Celebi",
       "altura": "60cm",
       "habilidad": "Cura natural",
-      "imagen": "",
+      "imagen": "https://storage.googleapis.com/pokeamigos-imagenes/Celebi.jpg",
       "frase-filosofica": "Sana y crece."
     },
     {
@@ -53,7 +53,7 @@
       "nombre": "Jigglypuff",
       "altura": "50cm",
       "habilidad": "Tenacidad",
-      "imagen": "",
+      "imagen": "https://storage.googleapis.com/pokeamigos-imagenes/Jigglypuff.jpg",
       "frase-filosofica": "Da cada paso en tu propio compás."
     }
   ]
