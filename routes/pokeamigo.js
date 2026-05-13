@@ -4,41 +4,40 @@ const fs = require('fs')
 const path = require('path')
 const os = require('os')
 
-router.get('/pokeamigo', (req, res) => {
-  let db;
-  try {
-    db = JSON.parse(fs.readFileSync(path.join(__dirname, '../pokeamigos-db.json'), 'utf-8'));
-  } catch (err) {
-    console.error('Error leyendo base de datos:', err); 
-  }
-
+function getPokeamigoAleatorio() {
+  const db = JSON.parse(fs.readFileSync(path.join(__dirname, '../pokeamigos-db.json'), 'utf-8'));
   const lista_amigos = db["reg-pokeamigos"];
   const num_amigo = Math.floor(Math.random() * lista_amigos.length);
+  return lista_amigos[num_amigo];
+}
 
-  res.json({
-    ...lista_amigos[num_amigo],
-    contenedor: os.hostname()
-  });
+router.get('/pokeamigo', (req, res) => {
+  try {
+    const amigo = getPokeamigoAleatorio();
+    res.json({
+      id: amigo.id,
+      nombre: amigo.nombre,
+      altura: amigo.altura,
+      habilidad: amigo.habilidad,
+      contenedor: os.hostname()
+    });
+  } catch (err) {
+    console.error('Error leyendo base de datos:', err);
+  }
 })
 
 router.get('/pokeamigo/visual', (req, res) => {
-  let db;
   try {
-    db = JSON.parse(fs.readFileSync(path.join(__dirname, '../pokeamigos-db.json'), 'utf-8'));
+    const amigo = getPokeamigoAleatorio();
+    res.send(`
+      <h1>${amigo.nombre}</h1>
+      <img src="${amigo.imagen}" alt="${amigo.nombre}" width="300"/>
+      <p><i>${amigo["frase-filosofica"]}</i></p>
+      <p>Contenedor: ${os.hostname()}</p>
+    `)
   } catch (err) {
-    console.error('Error leyendo base de datos:', err); 
+    console.error('Error leyendo base de datos:', err);
   }
-
-  const lista_amigos = db["reg-pokeamigos"];
-  const num_amigo = Math.floor(Math.random() * lista_amigos.length);
-  const amigo = lista_amigos[num_amigo];
-
-  res.send(`
-    <h1>${amigo.nombre}</h1>
-    <img src="${amigo.imagen}" alt="${amigo.nombre}" width="300"/>
-    <p><i>${amigo["frase-filosofica"]}</i></p>
-    <p>Contenedor: ${os.hostname()}</p>
-  `)
 })
 
 module.exports = router

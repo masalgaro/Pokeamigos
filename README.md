@@ -7,7 +7,7 @@ Muestra información minimalista de "Pokeamigos" (completamente libres de infrac
 ## Rutas
 
 `GET /api/v1/pokeamigo` retorna JSON con id, nombre, altura, habilidad y contenedor
-`GET /api/v1/pokeamigo/visual` muestra imagen, frase filosófica t contenedor del Pokeamigo en HTML
+`GET /api/v1/pokeamigo/visual` muestra imagen, frase filosófica y contenedor del Pokeamigo en HTML
 
 ## Instalación y Uso
 
